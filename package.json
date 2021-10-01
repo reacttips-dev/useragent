@@ -1,0 +1,13 @@
+{
+  "name": "@reacttips-dev/useragent",
+  "version": "0.1.0",
+  "description": "User agent parser internal library used by Facebook team",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "dependencies": {
+    "ua-parser-js": "^0.7.28"
+  },
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
+}

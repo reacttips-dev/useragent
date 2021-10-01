@@ -38,5 +38,8 @@
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

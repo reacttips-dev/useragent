@@ -9,9 +9,9 @@
 
 'use strict';
 
-// jest
-//   .unmock('UserAgent')
-//   .unmock('VersionRange');
+jest
+  .unmock('../index')
+  .unmock('../lib/VersionRange');
 
 var UserAgent = require('../index');
 var UserAgentData = require('../lib/userAgentData');

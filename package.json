@@ -5,12 +5,38 @@
   "license": "Apache-2.0",
   "main": "index.js",
   "dependencies": {
-    "ua-parser-js": "^0.7.28"
+    "ua-parser-js": "^0.7.18"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "babel-preset-fbjs": "^3.4.0",
     "jest": "^25.4.0"
   },
   "scripts": {
     "test": "yarn jest"
+  },
+  "jest": {
+    "automock": true,
+    "modulePathIgnorePatterns": [
+      "/lib/",
+      "/node_modules/"
+    ],
+    "rootDir": "",
+    "setupFiles": [
+      "./jest/environment.js"
+    ],
+    "roots": [
+      "<rootDir>/"
+    ],
+    "timers": "fake",
+    "transform": {
+      ".*": "./jest/preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/"
+    ]
   }
 }

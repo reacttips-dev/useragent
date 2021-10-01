@@ -9,16 +9,14 @@
 
 'use strict';
 
-jest
-  .unmock('../index')
-  .unmock('../lib/VersionRange');
-
 var UserAgent = require('../index');
 var UserAgentData = require('../lib/userAgentData');
 
+console.log('__-UserAgent', UserAgent);
+
 describe('UserAgent', () => {
     function stubUserAgentData(object) {
-        Object.assign(UserAgentData, object);
+        return Object.assign(UserAgentData, object);
     }
 
     beforeEach(() => {

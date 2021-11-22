@@ -12,11 +12,9 @@
 var UserAgent = require('../index');
 var UserAgentData = require('../lib/userAgentData');
 
-console.log('__-UserAgent', UserAgent);
-
 describe('UserAgent', () => {
     function stubUserAgentData(object) {
-        return Object.assign(UserAgentData, object);
+        Object.assign(UserAgentData, object);
     }
 
     beforeEach(() => {
@@ -152,7 +150,6 @@ describe('UserAgent', () => {
 
             expect(UserAgent.isPlatform('Windows')).toBe(true);
             expect(UserAgent.isPlatform('Windows NT4.0')).toBe(true);
-
             expect(UserAgent.isPlatform('Windows Vista')).toBe(false);
         });
 

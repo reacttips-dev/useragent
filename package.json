@@ -1,9 +1,16 @@
 {
-  "name": "@reacttips-dev/useragent",
+  "name": "@react-tips/useragent",
   "version": "1.0.0",
   "description": "User agent parser internal library used by Facebook team",
   "license": "Apache-2.0",
   "main": "index.js",
+  "typings": "./index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
   "dependencies": {
     "ua-parser-js": "^0.7.18"
   },
@@ -14,30 +21,6 @@
   },
   "scripts": {
     "test": "yarn jest"
-  },
-  "jest": {
-    "automock": true,
-    "modulePathIgnorePatterns": [
-      "/lib/",
-      "/node_modules/"
-    ],
-    "rootDir": "",
-    "setupFiles": [
-      "./jest/environment.js"
-    ],
-    "roots": [
-      "<rootDir>/"
-    ],
-    "timers": "fake",
-    "transform": {
-      ".*": "./jest/preprocessor.js"
-    },
-    "transformIgnorePatterns": [
-      "/node_modules/"
-    ],
-    "unmockedModulePathPatterns": [
-      "<rootDir>/node_modules/"
-    ]
   },
   "publishConfig": {
     "access": "public"

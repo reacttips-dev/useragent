@@ -1,5 +1,5 @@
 {
-  "name": "@react-tips/useragent",
+  "name": "@reacttips/useragent",
   "version": "1.0.0",
   "description": "User agent parser internal library used by Facebook team",
   "license": "Apache-2.0",

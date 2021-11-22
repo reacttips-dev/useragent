@@ -7,7 +7,6 @@ dist
 .idea
 .package-lock.json
 .cache
-
-dist
+yarn.lock
 public
 storybook-static

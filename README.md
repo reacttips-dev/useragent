@@ -3,11 +3,11 @@ This package is same as useragent that Facebook's team uses in their products.
 
 ## Install
 ```bash
-yarn add @react-tips/useragent
+yarn add @reacttips/useragent
 
 or
 
-npm install @react-tips/useragent
+npm install @reacttips/useragent
 ```
 ## How to use
 Let's assume that we have user agent data as following:
